@@ -9,10 +9,11 @@ import { PieComponent } from './pie/pie.component';
 
 import { FormComponentComponent } from './form-component/form-component.component';
 import { ContenidoComponent } from './contenido/contenido.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { Form2Component } from './form2/form2.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { FormPersonaComponent } from './pages/form-persona/form-persona.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,11 +27,13 @@ import { Form2Component } from './form2/form2.component';
      HomeComponent,
      AboutComponent,
      ContactComponent,
-     Form2Component
+     FormPersonaComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

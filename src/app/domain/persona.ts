@@ -1,6 +1,5 @@
-export class persona{
-    nombre: string = "";
-    cedula: string= "";
-    direccion: string = "";
+export class Persona {
+  nombre: string = '';
+  cedula: string = '';
+  direccion: string = '';
 }
-  

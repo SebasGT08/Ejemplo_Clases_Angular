@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { persona } from '../domain/persona';
+import { Persona } from '../domain/persona';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonaService {
 
-  personas: persona[]=[]
+  personas: Persona[]=[]
 
-  save(persona: persona){
+  save(persona: Persona){
     this.personas.push(persona)
     console.log(this.personas)
   }
@@ -17,9 +17,4 @@ export class PersonaService {
     return this.personas
   }
 
-  constructor() {
-
-   }
-
-   
 }

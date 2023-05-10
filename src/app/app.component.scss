@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "west-menu center-content east-info"
+    "footer footer footer";
+  height: 100vh;
+}
+
+app-cabezera {
+  grid-area: header;
+}
+app-contenido{
+  grid-area: center-content;
+}
+app-pie {
+  grid-area: footer;
+}
+
+app-form-component {
+  grid-area: east-info;
+}
+
+app-menu {
+  grid-area: west-menu;
+}
+

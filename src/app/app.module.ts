@@ -14,6 +14,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { FormPersonaComponent } from './pages/form-persona/form-persona.component';
 import { FormsModule } from '@angular/forms';
+import { ListPersonaComponent } from './pages/list-persona/list-persona.component';
+import { EditPersonaComponent } from './pages/edit-persona/edit-persona.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { FormsModule } from '@angular/forms';
      AboutComponent,
      ContactComponent,
      FormPersonaComponent,
+     ListPersonaComponent,
+     EditPersonaComponent,
 
   ],
   imports: [
